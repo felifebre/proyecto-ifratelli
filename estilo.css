@@ -17,9 +17,22 @@ header{
     width: 3%;
     position: fixed
 }
+.titulo{
+    font-family: great vibes;
+    margin-left: 20%;
+    font-size: 205%;
+    margin-top: -4%;
+}
+.flecha{
+    width: 4%;
+  top: -1%; 
+  left: -3%;
+  border-radius: 100%;
+  position: fixed
+}
 .seccion{
     display: grid;
-  grid-template-columns: repeat(2, 1fr); /* dos columnas */
+  grid-template-columns: repeat(2, 1fr); 
   gap: 20px;
   padding: 20px;
 }
@@ -93,11 +106,82 @@ div {
     text-align: center;
     margin: 20px;
 }
-footer {
-    background-color:black;
-    text-align:end;
-    padding: 4px; 
+main{
+    padding: 5%;
 }
-footer img{
-    border-radius: 55%;
+footer {
+  background-color: black;
+  padding: 10px 2px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0;
+  box-sizing: border-box;
+}
+footer img {
+  border-radius: 55%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.barra-tricolor-header {
+  display: flex;
+  justify-content: start;
+  gap: 3%;
+  margin: 1% 0 1% 1%;
+}
+.barra-tricolor-header .linea {
+  width: 27%;
+  height: 2px;
+}
+.verde {
+  background-color: green;
+}
+.blanca {
+  background-color: white;
+}
+.roja {
+  background-color: red;
+}
+.barra-tricolor-footer {
+  display: flex;
+  gap: 5px;
+  transform: rotate(-5deg);
+}
+.barra-tricolor-footer .linea-footer {
+  width: 6px;
+  height: 75px;
+}
+.producto {
+  display: flex;
+  background-color: silver; 
+  border-radius: 5%;
+  padding: 2%;
+  margin-bottom: 5%;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 5%;
+  width: 80%;
+}
+.producto img {
+  width: 30%;
+  border-radius: 20%;
+}
+.producto h3 {
+  font-size: 100%;
+  color: black;
+  margin-bottom: 5%;
+}
+.producto button {
+  background-color: black;
+  color: white;
+  padding: 3% 6%;
+  border: none;
+  border-radius: 5%;
+  cursor: pointer;
+  font-size: 90%;
+  align-self: center;
 }
