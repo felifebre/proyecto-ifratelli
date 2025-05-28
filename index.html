@@ -5,9 +5,10 @@
         <meta name="viewport"content="width=device-width, initial-scale=1.0">
         <title>Home-iFratelli</title>
         <link rel="stylesheet" href="estilo.css">
+        <script type="text/javascript" src="funciones.js"></script>
     </head>
     <body>
-        <header>
+        <header style="position:relative">
             <img src="imagenes/logo.jpg" alt="logo" id="logo">
             <a href="Pedido.html">
                 <img src="imagenes/carrito.jpg" id="carrito">
@@ -22,26 +23,14 @@
                 <div class="linea blanca"></div>
                 <div class="linea roja"></div>
             </div>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="index.html">Home  </a>
-                    </li>
-                    <li>
-                        <a href="Productos.html">Productos</a>
-                    </li> 
-                    <li>
-                        <a href="Ofertas.html">Ofertas imperdibles</a>
-                    </li>    
-                    <li>
-                        <a href="Nosotros.html">Sobre nosotros</a>
-                    </li> 
-                    <li>
-                       <a href="Pedido.html">Mi pedido</a> 
-                    </li>
-                    <li>
-                        <a href="Horarios.html">Horarios</a>
-                    </li>
+            <nav id="menu-principal" class="oculto">
+                <ul class="menu-principal">
+                 <li><a href="index.html">Home</a></li>
+                 <li><a href="Productos.html">Productos</a></li>
+                 <li><a href="Ofertas.html">Ofertas imperdibles</a></li>
+                 <li><a href="Nosotros.html">Sobre nosotros</a></li>
+                 <li><a href="Pedido.html">Mi pedido</a></li>
+                 <li><a href="Horarios.html">Horarios</a></li>
                 </ul>
             </nav>
         </header>
@@ -54,37 +43,37 @@
                 </a>
             </section>
             <section class="fondo-negro">
-                <a href="Productos.html">
+                <a href="Productos.html?q=vaca">
                     <img src="imagenes/carne-vaca.jpg" alt="carne de vaca">
                     <h3 >CARNES DE VACA</h3>
                 </a>
             </section>
             <section class="fondo-negro">
-                <a href="Productos.html">
+                <a href="Productos.html?q=cerdo">
                     <img src="imagenes/carne-cerdo.jpg" alt="carne de cerdo">
                     <h3 >CARNES DE CERDO</h3>
                 </a>
             </section>
             <section class="fondo-negro">
-                <a href="Productos.html">
+                <a href="Productos.html?q=pollo">
                     <img src="imagenes/pollo.jpg" alt="pollo">
                     <h3>POLLO</h3>
                 </a>
             </section>
             <section class="fondo-negro">
-                <a href="Productos.html">
+                <a href="Productos.html?q=rebozados">
                     <img src="imagenes/rebozados.jpg" alt="rebozados y congelados">
                     <h3>REBOZADOS Y CONGELADOS</h3>
                 </a>
             </section>
             <section class="fondo-negro">
-                <a href="Productos.html">
+                <a href="Productos.html?q=carbon">
                     <img src="imagenes/carbon-leña 1.jpg" alt="leña y carbón">
                     <h3>CARBÓN Y LEÑA</h3>
                 </a>
             </section>
             <section class="fondo-negro">
-                <a href="Productos.html">
+                <a href="Productos.html?q=sorrentino">
                     <img src="imagenes/sorrentinos-coppento.jpg" alt="">
                     <h3>SORRENTINOS COPPENTO</h3>
                 </a>

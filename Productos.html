@@ -2,14 +2,15 @@
 <html lang="es">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport"content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Productos-iFratelli</title>
         <link rel="stylesheet" href="estilo.css">
+        <script type="text/javascript" src="funciones.js"></script>
     </head>
     <body>
         <header>
             <img src="imagenes/logo.jpg" alt="logo de ifratelli">
-            <h1 class=titulo>PRODUCTOS:</h1>
+            <h1 class="titulo">PRODUCTOS:</h1>
             <a href="index.html">
                 <img src="imagenes/flecha.png" alt="atr" class="flecha">
             </a>
@@ -23,26 +24,14 @@
                 <div class="linea blanca"></div>
                 <div class="linea roja"></div>
             </div>
-            <nav>
+            <nav id="menu-principal" class="oculto">
                 <ul>
-                    <li>
-                        <a href="index.html">Home  </a>
-                    </li>
-                    <li>
-                        <a href="Productos.html">Productos</a>
-                    </li> 
-                    <li>
-                        <a href="Ofertas.html">Ofertas imperdibles</a>
-                    </li>    
-                    <li>
-                        <a href="Nosotros.html">Sobre nosotros</a>
-                    </li> 
-                    <li>
-                       <a href="Pedido.html">Mi pedido</a> 
-                    </li>
-                    <li>
-                        <a href="Horarios.html">Horarios</a>
-                    </li>
+                    <li><a href="index.html">Home  </a></li>
+                    <li><a href="Productos.html">Productos</a></li>
+                    <li><a href="Ofertas.html">Ofertas imperdibles</a></li>    
+                    <li><a href="Nosotros.html">Sobre nosotros</a></li> 
+                    <li><a href="Pedido.html">Mi pedido</a> </li>
+                    <li><a href="Horarios.html">Horarios</a></li>
                 </ul>
             </nav>
         </header>
@@ -58,7 +47,7 @@
         <main>
             <section class="producto">
              <img src="imagenes/matambre.webp" alt="Matambre">
-                <div class="productos-vaca">
+                <div class="productos-vaca" data-categoria="vaca">
                     <h2>Matambre x Kg.</h2>
                     <h2>$10.000</h2>
                     <button type="button">AGREGAR AL CARRITO</button>
@@ -66,7 +55,7 @@
             </section>
             <section class="producto">
              <img src="imagenes/vacio.webp" alt="vacio">
-                <div class="productos-vaca">
+                <div class="productos-vaca" data-categoria="vaca">
                     <h2>Vacío x Kg.</h2>
                     <h2>$10.000</h2>
                     <button type="button">AGREGAR AL CARRITO</button>
@@ -74,7 +63,7 @@
             </section>
             <section class="producto">
              <img src="imagenes/costilla.webp" alt="costilla">
-                <div class="productos-vaca">
+                <div class="productos-vaca" data-categoria="vaca">
                     <h2>Costilla x Kg.</h2>
                     <h2>$10.000</h2>
                     <button type="button">AGREGAR AL CARRITO</button>
@@ -82,7 +71,7 @@
             </section>
             <section class="producto">
              <img src="imagenes/entraña.webp" alt="Entraña">
-                <div class="productos-vaca">
+                <div class="productos-vaca" data-categoria="vaca">
                     <h2>Entraña x Kg.</h2>
                     <h2>$10.000</h2>
                     <button type="button">AGREGAR AL CARRITO</button>
@@ -90,7 +79,7 @@
             </section>
             <section class="producto">
              <img src="imagenes/falda.webp" alt="Falda">
-                <div class="productos-vaca">
+                <div class="productos-vaca" data-categoria="vaca">
                     <h2>Falda x Kg.</h2>
                     <h2>$10.000</h2>
                     <button type="button">AGREGAR AL CARRITO</button>
@@ -98,7 +87,7 @@
             </section>
             <section class="producto">
                 <img src="imagenes/matamebre-cerdo.webp" alt="Matambre de cerdo">
-                <div class="productos-cerdo">
+                <div class="productos-cerdo" data-categoria="cerdo">
                     <h2>Matambre de cerdo x Kg.</h2>
                     <h2>$10.000</h2>
                     <button type="button">AGREGAR AL CARRITO</button>
@@ -106,7 +95,7 @@
             </section>
             <section class="producto">
              <img src="imagenes/costeleta-cerdo.webp" alt="Costeleta de cerdo">
-                <div class="productos-cerdo">
+                <div class="productos-cerdo" data-categoria="cerdo">
                     <h2>Costeleta de cerdo x Kg.</h2>
                     <h2>$10.000</h2>
                     <button type="button">AGREGAR AL CARRITO</button>
@@ -114,7 +103,7 @@
             </section>
             <section class="producto">
              <img src="imagenes/solomillo-cerdo.webp" alt="Solomillo">
-                <div class="productos-cerdo">
+                <div class="productos-cerdo" data-categoria="cerdo">
                     <h2>Solomillo x Kg.</h2>
                     <h2>$10.000</h2>
                     <button type="button">AGREGAR AL CARRITO</button>
@@ -122,7 +111,7 @@
             </section>
             <section class="producto">
              <img src="imagenes/pulpa-cerdo.webp" alt="Pulpa de cerdo">
-                <div class="productos-cerdo">
+                <div class="productos-cerdo" data-categoria="cerdo">
                     <h2>Pulpa de cerdo x Kg.</h2>
                     <h2>$10.000</h2>
                     <button type="button">AGREGAR AL CARRITO</button>
@@ -130,7 +119,7 @@
             </section>
             <section class="producto">
              <img src="imagenes/patita-cerdo.webp" alt="Patita de cerdo">
-                <div class="productos-cerdo">
+                <div class="productos-cerdo" data-categoria="cerdo">
                     <h2>Patita de cerdo x Kg.</h2>
                     <h2>$10.000</h2>
                     <button type="button">AGREGAR AL CARRITO</button>
@@ -138,7 +127,7 @@
             </section>
             <section class="producto">
              <img src="imagenes/pollo-entero.webp" alt="Pollo entero">
-                <div class="productos-pollo">
+                <div class="productos-pollo" data-categoria="pollo">
                     <h2>Pollo entero x Kg.</h2>
                     <h2>$10.000</h2>
                     <button type="button">AGREGAR AL CARRITO</button>
@@ -146,7 +135,7 @@
             </section>
             <section class="producto">
              <img src="imagenes/pata-muslo.webp" alt="Pata muslo">
-                <div class="productos-pollo">
+                <div class="productos-pollo" data-categoria="pollo">
                     <h2>Pata muslo x Kg.</h2>
                     <h2>$10.000</h2>
                     <button type="button">AGREGAR AL CARRITO</button>
@@ -154,7 +143,7 @@
             </section>
             <section class="producto">
              <img src="imagenes/pechuga-hueso.webp" alt="Pechuga">
-                <div class="productos-pollo">
+                <div class="productos-pollo" data-categoria="pollo">
                     <h2>Pechuga x Kg.</h2>
                     <h2>$10.000</h2>
                     <button type="button">AGREGAR AL CARRITO</button>
@@ -162,7 +151,7 @@
             </section>
             <section class="producto">
              <img src="imagenes/pechuga-deshuesada.webp" alt="Pechuga deshuesada">
-                <div class="productos-pollo">
+                <div class="productos-pollo" data-categoria="pollo">
                     <h2>Pechuga deshuesada x Kg.</h2>
                     <h2>$10.000</h2>
                     <button type="button">AGREGAR AL CARRITO</button>
@@ -170,7 +159,7 @@
             </section>
             <section class="producto">
              <img src="imagenes/alitas-pollo.webp" alt="Alitas de pollo">
-                <div class="productos-pollo">
+                <div class="productos-pollo" data-categoria="pollo">
                     <h2>Alitas de pollo x Kg.</h2>
                     <h2>$10.000</h2>
                     <button type="button">AGREGAR AL CARRITO</button>
@@ -178,7 +167,7 @@
             </section>
             <section class="producto">
              <img src="imagenes/carbon.webp" alt="Carbón">
-                <div class="carbon-leña">
+                <div class="carbon-leña" data-categoria="carbon">
                     <h2>Carbón</h2>
                     <h2>$10.000</h2>
                     <button type="button">AGREGAR AL CARRITO</button>
@@ -186,7 +175,7 @@
             </section>
             <section class="producto">
              <img src="imagenes/leña.webp" alt="Leña">
-                <div class="carbon-leña">
+                <div class="carbon-leña" data-categoria="carbon">
                     <h2>Leña</h2>
                     <h2>$10.000</h2>
                     <button type="button">AGREGAR AL CARRITO</button>
@@ -194,7 +183,7 @@
             </section>
             <section class="producto">
                 <img src="imagenes/milas.webp" alt="milanesas de carne">
-                    <div class="rebozados-congelados">
+                    <div class="rebozados-congelados" data-categoria="rebozados">
                         <h2>Milanesa de carne x Kg.</h2>
                         <h2>$10.000</h2>
                         <button type="button">AGREGAR AL CARRITO</button>
@@ -202,7 +191,7 @@
             </section>
             <section class="producto">
                 <img src="imagenes/milas.webp" alt="milanesas de cerdo">
-                    <div class="rebozados-congelados">
+                    <div class="rebozados-congelados" data-categoria="rebozados">
                         <h2>Milanesa de cerdo x Kg.</h2>
                         <h2>$10.000</h2>
                         <button type="button">AGREGAR AL CARRITO</button>
@@ -210,7 +199,7 @@
             </section>
             <section class="producto">
              <img src="imagenes/milas.webp" alt="milanesas de pollo">
-                <div class="rebozados-congelados">
+                <div class="rebozados-congelados" data-categoria="rebozados">
                     <h2>Milanesa de pollo x Kg.</h2>
                     <h2>$10.000</h2>
                     <button type="button">AGREGAR AL CARRITO</button>
@@ -218,7 +207,7 @@
             </section>
             <section class="producto">
              <img src="imagenes/milas.webp" alt="filet de merluza">
-                <div class="rebozados-congelados">
+                <div class="rebozados-congelados" data-categoria="rebozados">
                     <h2>Milanesa de merluza x Kg.</h2>
                     <h2>$10.000</h2>
                     <button type="button">AGREGAR AL CARRITO</button>
@@ -226,7 +215,7 @@
             </section>
             <section class="producto">
              <img src="imagenes/sorrentinos.webp" alt="sorrentinos coppento">
-                <div class="sorrentinos">
+                <div class="sorrentinos" data-categoria="sorrentinos">
                     <h2>Sorrentinos de vacío braseado (600 gr)</h2>
                     <h2>$12.000</h2>
                     <button type="button">AGREGAR AL CARRITO</button>
@@ -234,7 +223,7 @@
             </section>
             <section class="producto">
              <img src="imagenes/sorrentinos.webp" alt="sorrentinos coppento">
-                <div class="sorrentinos">
+                <div class="sorrentinos" data-categoria="sorrentinos">
                     <h2>Sorrentinos de osobuco al malbec (600 gr)</h2>
                     <h2>$12.000</h2>
                     <button type="button">AGREGAR AL CARRITO</button>
@@ -242,7 +231,7 @@
             </section>
             <section class="producto">
              <img src="imagenes/sorrentinos.webp" alt="sorrentinos coppento">
-                <div class="sorrentinos">
+                <div class="sorrentinos" data-categoria="sorrentinos">
                     <h2>Sorrentinos de cordero ahumado (600 gr)</h2>
                     <h2>$12.000</h2>
                     <button type="button">AGREGAR AL CARRITO</button>
@@ -250,7 +239,7 @@
             </section>
             <section class="producto">
              <img src="imagenes/sorrentinos.webp" alt="sorrentinos coppento">
-                <div class="sorrentinos">
+                <div class="sorrentinos" data-categoria="sorrentinos">
                     <h2>Sorrentinos de salmón rosado (600 gr)</h2>
                     <h2>$12.000</h2>
                     <button type="button">AGREGAR AL CARRITO</button>
@@ -258,7 +247,7 @@
             </section>
             <section class="producto">
              <img src="imagenes/sorrentinos.webp" alt="sorrentinos coppento">
-                <div class="sorrentinos">
+                <div class="sorrentinos" data-categoria="sorrentinos">
                     <h2>Sorrentinos de pimientos asados (600 gr)</h2>
                     <h2>$12.000</h2>
                     <button type="button">AGREGAR AL CARRITO</button>
@@ -266,7 +255,7 @@
             </section>
         </main>
         <footer>
-            <div class="barra-tricolor-footer">
+            <div class="barra-tricolor-footer"> 
                 <img src="imagenes/tres-lineas.png">
             </div>
             <div class="footer-right">

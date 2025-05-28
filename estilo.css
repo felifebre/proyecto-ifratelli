@@ -6,6 +6,7 @@ header{
 }
 #carrito{
     top:0;
+    z-index: 2;
     right: 8%;
     border-radius: 25%;
     width: 3%;
@@ -15,6 +16,7 @@ header{
      top:0;
     right: 3%;
     border-radius: 100%;
+    cursor: pointer;
     width: 3%;
     position: fixed
 }
@@ -94,16 +96,58 @@ body{
     margin: 0%;
     padding: 0;
 }
+
+
 nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
     background-color: #2d3436;
     justify-content: space-around;
 }
+nav ul li {
+    position: relative;
+    display: inline-block;
+    margin-right: 10px;
+}
 nav ul li a {
-    color: white;
     text-decoration: none;
-    padding: 10px;
+    padding: 10px 15px;
+    display: block;
+    color: white;
+}
+nav ul li .submenu-lista {
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    z-index: 10;
+    min-width: 180px;
+}
+nav ul li:hover .submenu-lista {
     display: block;
 }
+.submenu-lista li {
+    display: block;
+    margin: 0;
+        display: none;
+    position: absolute;
+    background-color: white;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    box-shadow: 0px 2px 6px rgba(0,0,0,0.2);
+}
+.submenu:hover .submenu-lista {
+    display: block;
+}
+
+.submenu-lista li a {
+    padding: 10px;
+    color: black;
+}
+
+
 div {
     text-align: center;
     margin: 20px;
@@ -217,4 +261,88 @@ footer a img {
 }
 .columna-horario li {
   font-size: 110%;
+}
+.oculto {
+  display: none;
+}
+#menu-principal {
+  background-color: silver;
+  padding: 10px;
+  position: absolute;
+  z-index: 2;
+  right: 15px;
+  top: 95px; 
+}
+#menu-principal ul {
+    display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex-direction: column;
+}
+#menu-principal li {
+  margin-bottom: 10px;
+}
+#menu-principal a {
+  text-decoration: none;
+  color: white;
+}
+.submenu-lista {
+  display: none;
+  position: absolute;
+  background-color: white;
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+  border: 1px solid #ccc;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  flex-direction: column;
+}
+
+.submenu.activo .submenu-lista {
+  display: flex;
+}
+
+.submenu-lista li {
+  margin: 5px 0;
+  display: none;
+}
+
+
+.menu-principal {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 20px;
+  position: relative;
+}
+
+.menu-principal li {
+  position: relative;
+}
+
+.submenu-lista {
+  display: none;
+  position: absolute;
+  top: 100%; /* justo debajo del item principal */
+  left: 0;
+  background-color: white;
+  list-style: none;
+  padding: 10px;
+  margin: 0;
+  border: 1px solid #ccc;
+  flex-direction: column;
+  min-width: 180px;
+  z-index: 1000;
+}
+
+.submenu:hover .submenu-lista {
+  display: flex;
+}
+
+.submenu-lista li {
+  margin: 5px 0;
 }

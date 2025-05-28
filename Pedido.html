@@ -5,6 +5,7 @@
         <meta name="viewport"content="width=device-width, initial-scale=1.0">
         <title>Mi Pedido-iFratelli</title>
         <link rel="stylesheet" href="estilo.css">
+        <script type="text/javascript" src="funciones.js"></script>
     </head>
     <body>
         <header>
@@ -22,29 +23,26 @@
                 <div class="linea blanca"></div>
                 <div class="linea roja"></div>
             </div>
-            <nav>
+            <nav id="menu-principal" class="oculto">
                 <ul>
-                    <li>
-                        <a href="index.html">Home  </a>
-                    </li>
-                    <li>
-                        <a href="Productos.html">Productos</a>
-                    </li> 
-                    <li>
-                        <a href="Ofertas.html">Ofertas imperdibles</a>
-                    </li>    
-                    <li>
-                        <a href="Nosotros.html">Sobre nosotros</a>
-                    </li> 
-                    <li>
-                       <a href="Pedido.html">Mi pedido</a> 
-                    </li>
-                    <li>
-                        <a href="Horarios.html">Horarios</a>
-                    </li>
+                    <li><a href="index.html">Home  </a></li>
+                    <li><a href="Productos.html">Productos</a></li>
+                    <li><a href="Ofertas.html">Ofertas imperdibles</a></li>    
+                    <li><a href="Nosotros.html">Sobre nosotros</a></li> 
+                    <li><a href="Pedido.html">Mi pedido</a> </li>
+                    <li><a href="Horarios.html">Horarios</a></li>
                 </ul>
             </nav>
         </header>
+        <script>
+             mostrarPedido();
+        </script>
+        <main>
+            <h2>Tu pedido aparecerá aquí:</h2>
+            <div id="pedido-contenedor"></div>
+        </main>
+        <button onclick="enviarPedidoPorWhatsApp()">Enviar por WhatsApp</button>
+        <button onclick="localStorage.removeItem('carrito'); location.reload();">Vaciar carrito</button>
         <footer>
             <div class="barra-tricolor-footer">
                 <img src="imagenes/tres-lineas.png">
