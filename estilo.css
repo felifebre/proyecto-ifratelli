@@ -1,4 +1,3 @@
-
 header{
     color: white;
     background-color: black;
@@ -97,8 +96,6 @@ body{
     margin: 0%;
     padding: 0;
 }
-
-
 nav ul {
     list-style: none;
     padding: 0;
@@ -124,7 +121,6 @@ div {
 main{
     padding: 5%;
 }
-
 footer {
   background-color: black;
   display: flex;
@@ -302,4 +298,7 @@ footer {
     display: flex;
     flex: 1;
     
+}
+#chango{
+    width: 80%;
 }
