@@ -31,6 +31,7 @@ header{
   top: -1%; 
   left: -3%;
   border-radius: 100%;
+    cursor: pointer;
   position: fixed
 }
 .seccion{
@@ -116,38 +117,6 @@ nav ul li a {
     display: block;
     color: white;
 }
-nav ul li .submenu-lista {
-    display: none;
-    position: absolute;
-    background-color: white;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-    z-index: 10;
-    min-width: 180px;
-}
-nav ul li:hover .submenu-lista {
-    display: block;
-}
-.submenu-lista li {
-    display: block;
-    margin: 0;
-        display: none;
-    position: absolute;
-    background-color: white;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    box-shadow: 0px 2px 6px rgba(0,0,0,0.2);
-}
-.submenu:hover .submenu-lista {
-    display: block;
-}
-
-.submenu-lista li a {
-    padding: 10px;
-    color: black;
-}
-
-
 div {
     text-align: center;
     margin: 20px;
@@ -155,28 +124,32 @@ div {
 main{
     padding: 5%;
 }
+
 footer {
   background-color: black;
   display: flex;
+  justify-content: space-between; 
   align-items: center;
   width: 100%;
-  margin: 0;
-  height: 10%;
+  box-sizing: border-box;
 }
-footer a img {
-  border-radius: 55%;
-  width: 85%;
+.barra-tricolor-footer img {
+  width: 100%; 
+  margin-left: 10px; 
+}
+.footer-right {
   display: flex;
-  align-items: center;
+  gap: 20px; 
 }
-.footer-right{
-    display: grid;
-    grid-template-columns: auto auto auto;
-    float: right;
+.footer-right a img {
+  border-radius: 55%;
+  width: 90%; 
 }
 .barra-tricolor-footer img{
   display: flex;
   gap: 5px;
+  width: auto;
+  margin-left: 45%;
 }
 .barra-tricolor-header {
   display: flex;
@@ -228,12 +201,20 @@ footer a img {
   align-self: center;
 }
 #subtitulo1{
-    font-family: bebas neue, sans-serif;
+  font-family: 'bebas neue', sans-serif;
+  margin-left: 5%;
+  margin-top: 1.5%;
 }
 .mas-info{
     text-align: left;
-    margin-left: 0;
+    margin-left: 1.5%;
     padding: 10px 20px;
+    width: 43%;
+      justify-content: center;
+  align-items: center;
+}
+.mas-info p{
+    font-size: 105%;
 }
 .horarios-grid {
     text-align: left;
@@ -248,7 +229,7 @@ footer a img {
   padding: 20px;
   text-align: center;
   margin: 0 30px;
-  width: 50%;
+  width: 100%;
 }
 .columna-horario h3 {
   font-family: 'bebas neue', sans-serif;
@@ -265,11 +246,12 @@ footer a img {
 .oculto {
   display: none;
 }
+
 #menu-principal {
-  background-color: silver;
+  background-color: silver; 
   padding: 10px;
-  position: absolute;
-  z-index: 2;
+  position: fixed; 
+  z-index: 999;
   right: 15px;
   top: 95px; 
 }
@@ -287,62 +269,37 @@ footer a img {
   text-decoration: none;
   color: white;
 }
-.submenu-lista {
-  display: none;
-  position: absolute;
-  background-color: white;
-  list-style: none;
-  padding: 10px;
-  margin: 0;
-  border: 1px solid #ccc;
-  top: 100%;
-  left: 0;
-  z-index: 1000;
-  flex-direction: column;
+.boton-filtro,
+.boton-wpp,
+.boton-vaciar {
+  background-color: #2d3436;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  margin-left: 2.3%;
+  border-radius: 8%;
+  font-size: 15px;
+  font-family: 'Bebas Neue', sans-serif;
+  cursor: pointer;
+  font-weight: 450;
+  margin-bottom: 0.5%;
 }
+#carni{
+    width: 55%;
+      justify-content: center;
+  align-items: center;
 
-.submenu.activo .submenu-lista {
-  display: flex;
 }
+#carni img{
+    border-radius: 5%;
+    width: 80%;
+      justify-content: center;
+  align-items: center;
 
-.submenu-lista li {
-  margin: 5px 0;
-  display: none;
+
 }
-
-
-.menu-principal {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  gap: 20px;
-  position: relative;
-}
-
-.menu-principal li {
-  position: relative;
-}
-
-.submenu-lista {
-  display: none;
-  position: absolute;
-  top: 100%; /* justo debajo del item principal */
-  left: 0;
-  background-color: white;
-  list-style: none;
-  padding: 10px;
-  margin: 0;
-  border: 1px solid #ccc;
-  flex-direction: column;
-  min-width: 180px;
-  z-index: 1000;
-}
-
-.submenu:hover .submenu-lista {
-  display: flex;
-}
-
-.submenu-lista li {
-  margin: 5px 0;
+#nosotras{
+    display: flex;
+    flex: 1;
+    
 }

@@ -11,7 +11,7 @@
         <header>
             <img src="imagenes/logo.jpg" alt="logo de ifratelli">
             <h1 class="titulo">PRODUCTOS:</h1>
-            <a href="index.html">
+            <a href="#" onclick="volverAtras()">
                 <img src="imagenes/flecha.png" alt="atr" class="flecha">
             </a>
             <a href="Pedido.html">
@@ -36,13 +36,13 @@
             </nav>
         </header>
         <section class="filtros">
-            <button onclick="filtrarProductos('todos')">Todos</button>
-            <button onclick="filtrarProductos('vaca')">Carne de vaca</button>
-            <button onclick="filtrarProductos('cerdo')">Carne de cerdo</button>
-            <button onclick="filtrarProductos('pollo')">Pollo</button>
-            <button onclick="filtrarProductos('rebozados')">Rebozados y congelados</button>
-            <button onclick="filtrarProductos('carbon')">Carbón y leña</button>
-            <button onclick="filtrarProductos('sorrentinos')">Sorrentinos</button>
+            <button class="boton-filtro" onclick="filtrarProductos('todos')">TODOS</button>
+            <button class="boton-filtro" onclick="filtrarProductos('vaca')">CARNE DE VACA</button>
+            <button class="boton-filtro" onclick="filtrarProductos('cerdo')">CARNE DE CERDO</button>
+            <button class="boton-filtro" onclick="filtrarProductos('pollo')">POLLO</button>
+            <button class="boton-filtro" onclick="filtrarProductos('rebozados')">REBOZADOS Y CONGELADOS</button>
+            <button class="boton-filtro" onclick="filtrarProductos('carbon')">CARBÓN Y LEÑA</button>
+            <button class="boton-filtro" onclick="filtrarProductos('sorrentinos')">SORRENTINOS</button>
         </section>
         <main>
             <section class="producto">

@@ -11,8 +11,8 @@
         <header>
             <img src="imagenes/logo.jpg" alt="logo de ifratelli">
             <h1 class="titulo">MI PEDIDO:</h1>
-            <a href="index.html">
-                <img src="imagenes/flecha.png" alt="atras" class="flecha">
+            <a href="#" onclick="volverAtras()">
+                <img src="imagenes/flecha.png" alt="atr" class="flecha" >
             </a>
             <a href="Pedido.html">
                 <img src="imagenes/carrito.jpg" id="carrito">
@@ -34,15 +34,15 @@
                 </ul>
             </nav>
         </header>
+        <h2 id="subtitulo1">Tu pedido aparecerá aquí:</h2>
         <script>
              mostrarPedido();
         </script>
         <main>
-            <h2>Tu pedido aparecerá aquí:</h2>
             <div id="pedido-contenedor"></div>
         </main>
-        <button onclick="enviarPedidoPorWhatsApp()">Enviar por WhatsApp</button>
-        <button onclick="localStorage.removeItem('carrito'); location.reload();">Vaciar carrito</button>
+        <button onclick="enviarPedidoPorWhatsApp()" class="boton-wpp">ENVIAR MI PEDIDO POR WHATSAPP</button>
+        <button class="boton-vaciar" onclick="localStorage.removeItem('carrito'); location.reload();">VACIAR CARRITO</button>
         <footer>
             <div class="barra-tricolor-footer">
                 <img src="imagenes/tres-lineas.png">
